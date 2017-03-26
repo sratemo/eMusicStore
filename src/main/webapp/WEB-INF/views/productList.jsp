@@ -22,7 +22,6 @@
             </thead>
             <c:forEach items="${products}" var="product">
                 <tr>
-
                     <td><img src="#" alt="image"/></td>
                     <td>${product.productName}</td>
                     <td>${product.productCategory}</td>
@@ -33,4 +32,4 @@
         </table>
 
 
-<%@include file="/WEB-INF/views/template/footer.jsp"%>
+<%@include file="/WEB-INF/views/template/footer.jsp" %>
