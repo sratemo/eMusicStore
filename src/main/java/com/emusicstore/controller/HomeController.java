@@ -29,7 +29,6 @@ public class HomeController {
         List<Product> products = productDao.getProductList();
 
         model.addAttribute("products", products);
-
         return "productList";
 
     }
@@ -37,7 +36,7 @@ public class HomeController {
     @RequestMapping("/productList/viewProduct/{productId}")
     public String viewProduct(@PathVariable String productId, Model model) throws IOException {
 
-        Product product =  productDao.getProductById(productId);
+        Product product = productDao.getProductById(productId);
         model.addAttribute(product);
 
         return "viewProduct";
